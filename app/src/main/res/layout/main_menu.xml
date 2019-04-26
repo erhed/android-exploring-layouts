@@ -16,9 +16,11 @@
         android:id="@+id/editText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="100sp"
         android:ems="10"
         android:gravity="start|top"
         android:inputType="textMultiLine"
+        android:padding="15sp"
         android:text="Forest is green. Space is black. Blue is blue. Red is red. Sun is sun. Forest is green. Space is black. Blue is blue. Red is red. Sun is sun. Forest is green. Space is black. Blue is blue. Red is red. Sun is sun." />
 
     <LinearLayout
@@ -28,16 +30,21 @@
 
         <TextView
             android:id="@+id/textView2"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Load constraint layout" />
+            android:layout_gravity="center_vertical"
+            android:layout_weight=".7"
+            android:paddingLeft="15sp"
+            android:text="Load constraint layout"
+            android:textSize="20sp" />
 
         <Button
-            android:id="@+id/button"
-            android:layout_width="wrap_content"
+            android:id="@+id/load1"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_marginRight="15sp"
+            android:layout_weight=".3"
+            android:onClick="loadConstraintLayout"
             android:text="LOAD" />
     </LinearLayout>
 
@@ -48,22 +55,30 @@
 
         <TextView
             android:id="@+id/textView3"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Load table layout" />
+            android:layout_gravity="center_vertical"
+            android:layout_weight=".7"
+            android:paddingLeft="15sp"
+            android:text="Load table layout"
+            android:textSize="20sp" />
 
         <Button
-            android:id="@+id/button2"
-            android:layout_width="wrap_content"
+            android:id="@+id/load2"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_marginRight="15sp"
+            android:layout_weight=".3"
+            android:onClick="loadTableLayout"
             android:text="LOAD" />
     </LinearLayout>
 
     <RatingBar
         android:id="@+id/ratingBar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15sp"
+        android:layout_marginTop="75sp"
+        android:layout_marginRight="15sp" />
 
 </LinearLayout>

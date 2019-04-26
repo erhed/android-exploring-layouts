@@ -10,6 +10,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_menu);
+
+    }
+
+    void loadMenuLayout(View v) {
+        setContentView(R.layout.main_menu);
     }
 
     void loadConstraintLayout(View v) {
